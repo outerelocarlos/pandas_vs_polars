@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #f7f7f7; */
+  background: linear-gradient(225deg, #e9f2f7, #fffbec);  /* A subtle gradient for the body */
+  padding-bottom: 40px;
+}
+
+/* Container/wrapper styles for better alignment and spacing */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.jp-CodeMirrorEditor.jp-Editor.jp-InputArea-editor,
+.jp-RenderedHTMLCommon.jp-RenderedMarkdown.jp-MarkdownOutput pre {
+  border: 1px solid #2c3e50; /* Border to make it pop */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow for depth */
+  padding: 5px;
+}
+
+.jp-RenderedHTMLCommon.jp-RenderedMarkdown.jp-MarkdownOutput pre {
+  margin: 0;
+  padding: 8px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  background-color: #e8e8e8; /* Give a distinct background for better clarity */
+  padding: 2px 5px;  /* Padding for aesthetics */
+  border-radius: 4px; /* Soft rounding for better visual appeal */
+}
+
+/* Styles for headers/titles for better distinction */
+h1, h2, h3, h4 {
+  color: #333; /* Darker color for better visibility */
+  margin-bottom: 20px;
+}
+
+/* Main Title Styling (assuming h1 is your main title) */
+h1 {
+  background-color: #4e647a;  /* Dark color from your palette for contrast */
+  color: #ffffff;  /* White text */
+  padding: 15px 20px;  /* Space around text */
+  margin: 0 -20px;  /* Extend to full width of the container */
+  border-radius: 5px 5px 0 0;  /* Rounded corners at the top */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);  /* Shadow for depth */
+  margin-bottom: 5px !important;
+}
+
+h2, h3, h4 {
+  color: #2c3e50;  /* Keeping it consistent with h1 but without the background */
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+  margin-top: 20px;  /* Additional spacing on top for better separation */
+}
+
+/* Improve the presentation of tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.jp-Cell-outputWrapper table {
+  margin-top: 15px;
+}
+
+.jp-RenderedHTMLCommon.jp-RenderedHTML.jp-OutputArea-output.jp-OutputArea-executeResult {
+  padding-right: 0;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #e0e0e0;
+}
+
+/* Adding some spacing for general elements like paragraphs and lists */
+p, ul, ol {
+  margin-bottom: 20px;
+}
+
+/* Images */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border: 2px solid #2c3e50; /* Border to make it pop */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow for depth */
+}
+
+.jp-InputPrompt.jp-InputArea-prompt,
+.jp-OutputPrompt.jp-OutputArea-prompt,
+.jp-RenderedHTMLCommon.jp-RenderedHTML.jp-OutputArea-output.jp-OutputArea-executeResult small {
+  display: none !important; /* Add !important to enforce this rule */
+}
